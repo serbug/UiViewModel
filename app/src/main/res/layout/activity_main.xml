@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <Button
+            android:id="@+id/notificationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOW NOTIFICATION"
+            android:gravity="center_horizontal|center"
+            app:backgroundTint="@color/md_theme_dark_inversePrimary"
+            tools:ignore="HardcodedText,MissingConstraints"
+            style="@style/UiViewModelTheme"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    
+    
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:paddingTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notificationBtn"
+            tools:ignore="MissingConstraints">
+        
+        <EditText
+                android:id="@+id/searchInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_google_black_24dp"
+                android:hint="  Search Input"
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck"/>
+    
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="10dp"
+            android:text="SEARCH"
+            app:backgroundTint="@color/md_theme_dark_inversePrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/searchInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/notificationBtn"
+            tools:ignore="HardcodedText,MissingConstraints"
+            style="@style/ShapeAppearanceOverlay.Material3.Button"/>
+    
+    <Button
+            android:id="@+id/brainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:onClick="showDateAndTime"
+            android:text="Brainstorming"
+            app:backgroundTint="@color/md_theme_dark_inversePrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchInputLayout"
+            tools:ignore="HardcodedText,MissingConstraints,UsingOnClickInXml"/>
+    
+    <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brainButton"
+            tools:ignore="MissingConstraints">
+        
+        <RadioButton
+                android:id="@+id/frontCameraBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="openFrontCamera"
+                android:text="Front  "
+                android:drawableEnd="@drawable/ic_camera_black_24dp"
+                tools:ignore="HardcodedText,UsingOnClickInXml"/>
+        
+        <RadioButton
+                android:id="@+id/rearCameraBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="openRearCamera"
+                android:text="Rear   "
+                android:drawableEnd="@drawable/ic_camera_black_24dp"
+                tools:ignore="HardcodedText,UsingOnClickInXml"/>
+    </RadioGroup>
+    
+    <TextView
+            android:id="@+id/showDateTV"
+            android:layout_width="168dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageUTM"
+            tools:ignore="MissingConstraints"/>
+    
+    <ImageView
+            android:id="@+id/imageUTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brainButton"
+            app:srcCompat="@color/md_theme_light_onPrimary"
+            tools:srcCompat="@tools:sample/avatars"/>
+    
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_theme_dark_onSecondary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            />
+</androidx.constraintlayout.widget.ConstraintLayout>
