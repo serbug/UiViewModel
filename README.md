@@ -1,7 +1,7 @@
+**[![](https://simu.utm.md/students/images/utm-logo.png)](https://utm.md)**
 
 
-
-##  <center> <span style="color:grey">**🔥UI View Model**</span> <center/>
+##  <p align="center"> <span style="color:grey">**🔥UI View Model**</span> <p/>
 
 ## 📌Obiective
 
