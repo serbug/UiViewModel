@@ -1,4 +1,4 @@
-**<p align="center">[![](https://imgbb.com/"><img src="https://i.ibb.co/G28F37p/fcim-1.png)](https://utm.md)<p/>** 
+**<p align="center">[![](https://i.ibb.co/G28F37p/fcim-1.png)](https://utm.md)<p/>** 
 
 
 ## <p align="center"> <span style="color:grey">**🔥UI View Model**</span> <p/>
