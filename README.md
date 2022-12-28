@@ -1,4 +1,4 @@
-<p align="center"> **[![](https://simu.utm.md/students/images/utm-logo.png)](https://utm.md)** <p/>
+**<p align="center">[![](https://simu.utm.md/students/images/utm-logo.png)](https://utm.md)<p/>** 
 
 
 ## <p align="center"> <span style="color:grey">**🔥UI View Model**</span> <p/>
